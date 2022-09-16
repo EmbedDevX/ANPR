@@ -1,10 +1,25 @@
 import { createClient, commandOptions } from 'redis';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-//const express = require('express');
+import http from 'http';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 
+import express from 'express';
+const app = express();
+//the web module is only able to show last or first message from the subscribed redis queue. 
+//this can be chaned by a template engine or api with flutter.
+
+app.listen(4000, () => {
+  console.log('server running');
+  });
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+//eslint-disable-next-line @typescript-eslint/no-var-requires
 const client = createClient();
 
 await client.connect();
+//client.on('message', (channel, message) => {
+//console.log('Received data :' + message);
+//})
+//client.subscribe('jarless-1');
 
 let currentId = '0-0'; // Start at lowest possible stream ID
 
@@ -13,11 +28,12 @@ while (true) {
     let response = await client.xRead(
       commandOptions({
         isolated: true
-      }), [
+      }),
+      [
         // XREAD can read from multiple streams, starting at a
         // different ID for each...
         {
-          key: 'jarless-1', //jarless-1 new for python old mystream
+          key: 'ANPR', //jarless-1 same topic or publisher stream name refer
           id: currentId
         }
       ], {
@@ -26,7 +42,7 @@ while (true) {
         BLOCK: 5000
       }
     );
-    console.log(response);
+    console.log(JSON.stringify(response));
     if (response) {
       // Response is an array of streams, each containing an array of
       // entries:
@@ -46,31 +62,31 @@ while (true) {
       //console.log(JSON.stringify(response));
 
       // Get the ID of the first (only) entry returned.
+      app.get('/', (req, res) => {
+        // This will send the JSON data to the client.
+        res.send(response);
+      });
       currentId = response[0].messages[0].id;
-      console.log(currentId);
+      //http
+        //.createServer(function (req, res) {
+      //res.writeHead(200, { 'Content-Type': 'text/json' });
+        //res.json(response);
+        //res.end();
+        //});
+       
+             //console.log(currentId);
     } else {
       // Response is null, we have read everything that is
       // in the stream right now...
-      console.log('No new stream entries.');
+      //console.log('No new stream entries.');
     }
   } catch (err) {
     console.error(err);
   }
 }
 
-app.set('view engine', 'pug');
-app.set('views', 'views'); //let express know where to find the views
+//http.listen(8081, 'localhost', function () {
+  //console.log('Server is Listening at Port 3000!');
+//});
 
-//here add the data from the redis queue 
-const users = {
-  name: 'test',
-  age: '25',
-};
 
-app.use("/", (req, res, next) => {
-  res.render('users', { users: users, title: 'Users' }); // we don't need to use the extension express knows that we use pug templating engine
-  //add the data after reading from stream
-});
-app.listen(3000, () => {
-  console.log(`server is up and running`);
-});

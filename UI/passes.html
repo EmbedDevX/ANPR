@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR | Passes</title>
+    <link rel="stylesheet" href="./passesStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> <!--icons link-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--jquery link--> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--chart js link-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="sidebar">
+        <img src="./images/soulLogo.png" alt="" class="logo">
+        <nav>
+            <ul>
+                <!-- Dashboard -->
+                <li><a href="./adminDashboard.html"><i class='bx bxs-dashboard'></i></a></li>
+                <!-- Activity -->
+                <li><a href="./activity.html"><i class='bx bxs-analyse' ></i></a></li>
+                <!-- Passes -->
+                <li><a href="./passes.html"><i class='bx bx-id-card'></i></a></li>
+                <!-- Settings -->
+                <li><a href="./settings.html"><i class='bx bx-user' ></i></a></li>
+            </ul>
+        </nav>
+
+        <i class='bx bx-log-out logOutLogo' ></i>
+    </section>
+    <section class="mainBody">
+        <header>
+            <div class="pageName">Passes</div> 
+            <div class="navOpts">
+                <a href="#">Register vehicle</a>
+                <span>|</span>
+                <a href="#">Schedule visit</a>
+            </div>
+        </header>
+        <main>
+            <section class="summaryPanel">
+                <div class="summaryPanelName">Summary</div>
+                <section class="summaryPanelBody">
+                    <section class="summaryPanelCard">
+                        <i class='bx bxs-car summaryPanelCardLogo blueLogo'></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">All Passes Issued</div>
+                            <div class="summaryPanelCardValue">115</div>
+                        </div>
+                    </section>
+
+                    <section class="summaryPanelCard">
+                        <i class='bx bxs-car summaryPanelCardLogo redLogo'></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">One-Time Passes</div>
+                            <div class="summaryPanelCardValue">70</div>
+                        </div>
+                    </section>
+
+                    <section class="summaryPanelCard">
+                        <i class='bx bxs-car summaryPanelCardLogo blueLogo'></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Multi-Time Passes</div>
+                            <div class="summaryPanelCardValue">35</div>
+                        </div>
+                    </section>
+
+                    <section class="summaryPanelCard">
+                        <i class='bx bxs-car summaryPanelCardLogo redLogo'></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Multi-Day Passes</div>
+                            <div class="summaryPanelCardValue">10</div>
+                        </div>
+                    </section>
+
+                    <section class="summaryPanelCard">
+                        <i class='bx bxs-car summaryPanelCardLogo blueLogo'></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">All-Time Passes</div>
+                            <div class="summaryPanelCardValue">115</div>
+                        </div>
+                    </section>
+
+                    <section class="summaryPanelCard">
+                        <i class='bx bxs-car summaryPanelCardLogo blueLogo'></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Black listed vehicles</div>
+                            <div class="summaryPanelCardValue">115</div>
+                        </div>
+                    </section>
+                </section>
+            </section>            
+            <section class="latestEntriesTable">
+                <section class="tableHeader">
+                    <div class="tableOpts">
+                        <div class="tableName">All passes issued</div>
+                        <button class="reset" id="reset"><i class='bx bx-revision'></i></button>
+                    </div>
+                    <div class="tableSearchOpts">
+                        <div class="btnSet">
+                            <button id="chartView"><i class='bx bxs-chart' ></i></button>
+                            <button id="tableView"><i class='bx bx-table' ></i></button>
+                            <button id="filterBtn"><i class='bx bx-filter' ></i></button>
+                        </div>
+                        <div class="tableSearch">
+                            <input type="text" name="tableSearch" id="tableSearch" placeholder="Search...">
+                            <i class='bx bx-search-alt-2' ></i>
+                        </div>
+                    </div>
+                </section>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Serial</th>
+                            <th>Plate number</th>
+                            <th>Entry time</th>
+                            <th>Entry date</th>
+                            <th>Entry point</th>
+                            <th>Exit time</th>
+                            <th>Exit date</th>
+                            <th>Exit point</th>
+                            <th>Duration</th>
+                            <th>Pass type</th>
+                            <th>Pass status</th>
+                            <th>Vehicle status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>TN37CF204</td>
+                            <td>04:35 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>05:45 PM</td>
+                            <td>24-08-2022</td>
+                            <td>Gate no. 6</td>
+                            <td>01 hr 10 min</td>
+                            <td>One time</td>
+                            <td>Expired</td>
+                            <td>On-premise</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </section>
+    <script src="./adminDashboardScript.js"></script>
+</body>
+</html>

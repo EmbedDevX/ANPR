@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR | Settings</title>
+    <link rel="stylesheet" href="./settingsStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> <!--icons link-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--jquery link--> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--chart js link-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="sidebar">
+        <img src="./images/soulLogo.png" alt="" class="logo">
+        <nav>
+            <ul>
+                <!-- Dashboard -->
+                <li><a href="./adminDashboard.html"><i class='bx bxs-dashboard'></i></a></li>
+                <!-- Activity -->
+                <li><a href="./activity.html"><i class='bx bxs-analyse' ></i></a></li>
+                <!-- Passes -->
+                <li><a href="./passes.html"><i class='bx bx-id-card'></i></a></li>
+                <!-- Settings -->
+                <li><a href="./settings.html"><i class='bx bx-user' ></i></a></li>
+            </ul>
+        </nav>
+
+        <i class='bx bx-log-out logOutLogo' ></i>
+    </section>
+    <section class="mainBody">
+        <header>
+            <div class="pageName">Settings</div>
+            <div class="navOpts">
+                <a href="#">Register vehicle</a>
+                <span>|</span>
+                <a href="#">Schedule visit</a>
+            </div>
+        </header>
+        <main>
+            <div class="userDetailsPanel">
+                <div class="panelTitle">Profile</div>
+                <form class="userDetailsForm">
+                    <div class="fieldContainer">
+                        <label for="name">Name</label>
+                        <div class="inputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="name" id="name" placeholder="Enter name">
+                            <i class='bx bxs-pencil editField' ></i>
+                        </div>
+                        <div class="errorMsg">Error message</div>
+                    </div>
+    
+                    <div class="fieldContainer">
+                        <label for="email">ID</label>
+                        <div class="inputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="email" name="email" id="email" placeholder="Enter email">
+                            <i class='bx bxs-pencil editField' ></i>
+                        </div>
+                        <div class="errorMsg">Error message</div>
+                    </div>
+                    
+                    <div class="fieldContainer">
+                        <label for="email">Department</label>
+                        <div class="inputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="email" name="email" id="email" placeholder="Enter email">
+                            <i class='bx bxs-pencil editField' ></i>
+                        </div>
+                        <div class="errorMsg">Error message</div>
+                    </div>
+
+                    <div class="fieldContainer">
+                        <label for="email">Position</label>
+                        <div class="inputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="email" name="email" id="email" placeholder="Enter email">
+                            <i class='bx bxs-pencil editField' ></i>
+                        </div>
+                        <div class="errorMsg">Error message</div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="registeredVehiclesTableContainer">
+                <div class="tableTitle">Registered vehicles</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Vehicle number</th>
+                            <th>Registration ID</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TN37CF204</td>
+                            <td>1055</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>TN30CF204</td>
+                            <td>1075</td>
+                            <td>De-registered</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </section>
+    <script src="./passes2Script.js"></script>
+</body>
+</html>

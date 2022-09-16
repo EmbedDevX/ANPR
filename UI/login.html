@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR | Login</title>
+    <link rel="stylesheet" href="./loginStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> <!--icons link-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--jquery link--> 
+</head>
+<body>
+    <header>
+           <img src="./images/soulLogo.png" alt="" class="logo">
+           <nav>
+                <ul>
+                    <li><a href="#">Register vehicle</a></li>
+                    <li>|</li>
+                    <li><a href="#" id="scheduleVisit">Schedule visit</a></li>
+                    <li>|</li>
+                    <li><a href="./contactUs.html">Contact us</a></li>
+                </ul>
+           </nav>
+    </header>
+    <main>
+        <div class="loginFormContainer">
+            <div class="loginHeader">Login</div>
+            <form class="loginForm">
+                <div class="fieldContainer">
+                    <label for="user">ID / Email</label>
+                    <div class="inputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="user" id="user" placeholder="Enter ID or Email">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="errorMsg">Error message</div>
+                </div>
+                <div class="fieldContainer">
+                    <label for="password">Password</label>
+                    <div class="inputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="password" name="password" id="password" placeholder="Enter password">
+                        <i class="passView" id="passViewBtn"></i>
+                    </div>
+                    <div class="errorMsg">Error message</div>
+                </div>
+                <button id="loginBtn" class="loginBtn">Login</button>
+            </form>
+        </div>
+        <img src="./images/heroImg.png" alt="" class="heroImg">
+    </main>
+    <footer>
+       <a href="./aboutUs.html">About us</a>
+       
+       <div class="copyright">
+            <span>Copyright</span>
+            <i class='bx bxs-copyright' ></i>
+            <span class="copyrightYear">2022</span>
+       </div>
+
+       <a href="#">Privacy policy</a>
+    </footer>
+
+    <section class="msgBox" id="msgBox">
+        <i class="msgIcon" id="msgIcon"></i>
+        <div class="msg" id="msg"></div>
+    </section>
+
+
+
+    <script src="./loginScript.js"></script>
+</body>
+</html>

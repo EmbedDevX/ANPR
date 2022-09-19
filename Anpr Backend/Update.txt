@@ -1,0 +1,1 @@
+As Discussed, I will start develope code according to the backend architecture Diagram From 20th september.

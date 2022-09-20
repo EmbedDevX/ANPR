@@ -1,5 +1,5 @@
 All the backend code it attahced here.
-
+------------------------------------------------------------------------------------------------
 Classes :
 
 1) Python File name : Socket_listen.py
@@ -16,11 +16,11 @@ class : Send_data
 
 
 
-
-_________________________________
-
-
 In Socket_listen.py file Camera class calling Database Class and Send_data class
+Run.py is the program which is calling the Socket Class and execute continuously.
+
+------------------------------------------------------------------------------------------------
+
 
 
 Send_message_api is the tesing program , that sends the data through api.

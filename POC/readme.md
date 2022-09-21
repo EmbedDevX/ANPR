@@ -1,3 +1,6 @@
+Run server.py to create python publishing with dummy data
+run main.py to run web server.
+
 python web server listening on port 8000
 
 command to start restart web server uvicorn 

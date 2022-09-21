@@ -3,7 +3,7 @@ run main.py to run web server.
 
 python web server listening on port 8000
 
-command to start restart web server uvicorn 
+command to start restart web server uvicorn  :  
 uvicorn main:app --reload
 
 run main.py to get the data sent by python redis subscriber and udpate index.html with jinja templates.

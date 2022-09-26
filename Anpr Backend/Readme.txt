@@ -19,11 +19,12 @@ UPDATE ON CODE :
 
 1)All code are updated and ips and ports are reading from the configfile.ini file
 
+---------------------------------------------------------------------------------------------------
 
 In Socket_listen.py file Camera class calling Database Class and Send_data class
 Run.py is the program which is calling the Socket Class and execute continuously.
 
-------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 
 

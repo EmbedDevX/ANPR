@@ -14,6 +14,10 @@ class : Database
 
 class : Send_data
 
+---------------------------------------------------------------------------------------------------
+UPDATE ON CODE :
+
+1)All code are updated and ips and ports are reading from the configfile.ini file
 
 
 In Socket_listen.py file Camera class calling Database Class and Send_data class

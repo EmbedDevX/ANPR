@@ -17,7 +17,7 @@ class : Send_data
 ---------------------------------------------------------------------------------------------------
 UPDATE ON CODE :
 
-1)All code are updated and ips and ports are reading from the configfile.ini file
+1)All code are updated (ips and ports are reading from the configfile.ini file)
 
 ---------------------------------------------------------------------------------------------------
 

@@ -1,14 +1,18 @@
 
+from distutils.command.config import config
 import socket
 import select
 import logging
 import time 
-
+import configparser
 import database
 #import redis
 
+config_obj = configparser.ConfigParser()
+config_obj.read("configfile.ini",encoding='utf-8')
+db_param = config_obj["sql_server"]
 
-db = database.Database("10.0.2.19","sa","Soulsvciot01","ANPR")
+db = database.Database(db_param["host"],"sa","Soulsvciot01",db_param["db"])
 #red = redis.Send_data('localhost',6379)
 
 class Camera:

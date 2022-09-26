@@ -1,8 +1,14 @@
 
 import Socket_listen
 import time
+import configparser
+config_obj = configparser.ConfigParser()
+config_obj.read("configfile.ini",encoding='utf-8')
+listener_param= config_obj["tcp_listener"]
+# print(listener_param["tcp_ip"],type(listener_param["tcp_ip"]))
+# print(listener_param["tcp_port"],type(listener_param["tcp_port"]))
 
-Socket = Socket_listen.Camera("192.168.30.195",8090,"campus6")
+Socket = Socket_listen.Camera(listener_param["tcp_ip"],int(listener_param["tcp_port"]),"campus6")
 
 def f1():
 	while True :

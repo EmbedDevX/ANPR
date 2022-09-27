@@ -1,6 +1,5 @@
 All the backend code it attahced here.
-------------------------------------------------------------------------------------------------
-Classes :
+--------------------------------------------------------------------------------------------------
 
 1) Python File name : Socket_listen.py
 
@@ -10,14 +9,38 @@ Class : Camera
 
 class : Database
 
-3)Python File name : redis.py
+3)Python File name : Rediss.py
 
 class : Send_data
 
+4)Python File name : log.py
+ 
+Function : get_logger(name) to create a log description
+ 
+5)Python File name : Run.py
+
+Program that will execute continuously
+
+6)Python File name : API.py
+
+class to configure camera 
+
+7)Python File name : configure_camera.py
+
+Program that call the API.py and execute to configure camera parameter.
+
+
+ 
 ---------------------------------------------------------------------------------------------------
 UPDATE ON CODE :
 
+Dt :26th sep
 1)All code are updated (ips and ports are reading from the configfile.ini file)
+
+Dt :27th sep
+1)Code added in class to check DATABASE,REDIS,SOCKET status
+2)A central log file is created in which all the functionality of the class objects will be stored with time stamp
+
 
 ---------------------------------------------------------------------------------------------------
 

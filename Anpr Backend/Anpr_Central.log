@@ -1,0 +1,43 @@
+2022-09-27 15:45:57 INFO     Database Connected Succefully
+2022-09-27 15:46:00 INFO     Socket Created Succesfully
+2022-09-27 15:46:35 INFO     Data Recieved
+2022-09-27 15:46:35 INFO     Captured Data is Filtered
+2022-09-27 15:46:35 INFO     Number Plate is Corrected
+2022-09-27 15:46:35 INFO     Number Plate Checking Started
+2022-09-27 15:46:35 INFO     Vehicle Details checked against Database
+2022-09-27 15:46:35 INFO     Vehicle pass type checking started
+2022-09-27 15:46:35 INFO     Pass Type has been Checked Succesfully
+2022-09-27 15:46:35 INFO     Insertion in activity started
+2022-09-27 15:46:35 INFO     Data inserted successfully in the Activity table
+2022-09-27 15:46:38 INFO     Unreadable socket <socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36889)> is removed
+2022-09-27 15:46:44 INFO     Data Recieved
+2022-09-27 15:46:44 INFO     Captured Data is Filtered
+2022-09-27 15:46:44 INFO     Number Plate is Corrected
+2022-09-27 15:46:44 INFO     Number Plate Checking Started
+2022-09-27 15:46:44 INFO     Vehicle Details checked against Database
+2022-09-27 15:46:44 INFO     Vehicle pass type checking started
+2022-09-27 15:46:44 INFO     Pass Type has been Checked Succesfully
+2022-09-27 15:46:44 INFO     Insertion in activity started
+2022-09-27 15:46:44 INFO     Data inserted successfully in the Activity table
+2022-09-27 15:46:48 INFO     Unreadable socket <socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36890)> is removed
+2022-09-27 15:47:40 INFO     Database Connected Succefully
+2022-09-27 15:47:43 INFO     Socket Created Succesfully
+2022-09-27 15:47:49 INFO     Data Recieved
+2022-09-27 15:47:49 INFO     Captured Data is Filtered
+2022-09-27 15:47:49 INFO     Number Plate is Corrected
+2022-09-27 15:47:49 INFO     Number Plate Checking Started
+2022-09-27 15:47:49 INFO     Vehicle Details checked against Database
+2022-09-27 15:47:49 INFO     Vehicle pass type checking started
+2022-09-27 15:47:49 INFO     Pass Type has been Checked Succesfully
+2022-09-27 15:47:49 INFO     Insertion in activity started
+2022-09-27 15:47:49 INFO     Data inserted successfully in the Activity table
+2022-09-27 15:47:52 INFO     Unreadable socket <socket.socket fd=1012, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36894)> is removed
+2022-09-27 15:47:52 INFO     Data Recieved
+2022-09-27 15:47:52 INFO     Captured Data is Filtered
+2022-09-27 15:47:52 INFO     Number Plate is Corrected
+2022-09-27 15:47:52 INFO     Number Plate Checking Started
+2022-09-27 15:47:52 INFO     Vehicle Details checked against Database
+2022-09-27 15:47:52 INFO     Vehicle pass type checking started
+2022-09-27 15:47:52 INFO     Pass Type has been Checked Succesfully
+2022-09-27 15:47:52 INFO     Insertion in activity started
+2022-09-27 15:47:52 INFO     Data inserted successfully in the Activity table

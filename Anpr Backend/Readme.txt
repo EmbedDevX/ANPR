@@ -29,7 +29,7 @@ class to configure camera
 
 Program that call the API.py and execute to configure camera parameter.
 
-
+8)Anpr_Central : The cental log file
  
 ---------------------------------------------------------------------------------------------------
 UPDATE ON CODE :

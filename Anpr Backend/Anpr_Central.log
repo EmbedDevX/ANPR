@@ -1,0 +1,423 @@
+2022-09-27 13:08:06 INFO     Socket Created Succesfully
+2022-09-27 13:08:33 INFO     Data Recieved
+2022-09-27 13:08:33 INFO     Captured Data is Filtered
+2022-09-27 13:08:33 INFO     Number Plate is Corrected
+2022-09-27 13:08:33 INFO     Number Plate Checking Started
+2022-09-27 13:08:33 INFO     Vehicle pass type checking started
+2022-09-27 13:08:33 INFO     Insertion in activity started
+2022-09-27 13:25:34 INFO     Socket Created Succesfully
+2022-09-27 13:26:14 INFO     Data Recieved
+2022-09-27 13:26:14 INFO     Captured Data is Filtered
+2022-09-27 13:26:14 INFO     Number Plate is Corrected
+2022-09-27 13:26:14 INFO     Number Plate Checking Started
+2022-09-27 13:26:14 INFO     Vehicle pass type checking started
+2022-09-27 13:26:14 INFO     Insertion in activity started
+2022-09-27 13:29:03 INFO     Socket Created Succesfully
+2022-09-27 13:29:11 INFO     Data Recieved
+2022-09-27 13:29:11 INFO     Captured Data is Filtered
+2022-09-27 13:29:11 INFO     Number Plate is Corrected
+2022-09-27 13:29:11 INFO     Number Plate Checking Started
+2022-09-27 13:29:11 INFO     Vehicle pass type checking started
+2022-09-27 13:29:11 INFO     Insertion in activity started
+2022-09-27 13:29:14 INFO     Unreadable socket <socket.socket fd=992, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36329)> is removed
+2022-09-27 13:29:20 INFO     Data Recieved
+2022-09-27 13:29:20 INFO     Captured Data is Filtered
+2022-09-27 13:29:20 INFO     Number Plate is Corrected
+2022-09-27 13:29:20 INFO     Number Plate Checking Started
+2022-09-27 13:29:20 INFO     Vehicle pass type checking started
+2022-09-27 13:29:20 INFO     Insertion in activity started
+2022-09-27 13:29:23 INFO     Unreadable socket <socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36330)> is removed
+2022-09-27 13:29:23 INFO     Data Recieved
+2022-09-27 13:29:23 INFO     Captured Data is Filtered
+2022-09-27 13:29:23 INFO     Number Plate is Corrected
+2022-09-27 13:29:23 INFO     Number Plate Checking Started
+2022-09-27 13:29:23 INFO     Vehicle pass type checking started
+2022-09-27 13:29:23 INFO     Insertion in activity started
+2022-09-27 13:29:26 INFO     Unreadable socket <socket.socket fd=992, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36331)> is removed
+2022-09-27 13:29:30 INFO     Data Recieved
+2022-09-27 13:29:30 INFO     Captured Data is Filtered
+2022-09-27 13:29:30 INFO     Number Plate Checking Started
+2022-09-27 13:29:30 INFO     Vehicle pass type checking started
+2022-09-27 13:29:30 INFO     Insertion in activity started
+2022-09-27 13:29:33 INFO     Unreadable socket <socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36332)> is removed
+2022-09-27 13:29:39 INFO     Data Recieved
+2022-09-27 13:29:39 INFO     Captured Data is Filtered
+2022-09-27 13:29:39 INFO     Number Plate is Corrected
+2022-09-27 13:29:39 INFO     Number Plate Checking Started
+2022-09-27 13:29:39 INFO     Vehicle pass type checking started
+2022-09-27 13:29:39 INFO     Insertion in activity started
+2022-09-27 13:29:42 INFO     Unreadable socket <socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36333)> is removed
+2022-09-27 13:29:45 INFO     Data Recieved
+2022-09-27 13:29:45 INFO     Captured Data is Filtered
+2022-09-27 13:29:45 INFO     Number Plate is Corrected
+2022-09-27 13:29:45 INFO     Number Plate Checking Started
+2022-09-27 13:29:45 INFO     Vehicle pass type checking started
+2022-09-27 13:29:45 INFO     Insertion in activity started
+2022-09-27 13:29:48 INFO     Unreadable socket <socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36334)> is removed
+2022-09-27 13:30:09 INFO     Data Recieved
+2022-09-27 13:30:09 INFO     Captured Data is Filtered
+2022-09-27 13:30:09 INFO     Number Plate is Corrected
+2022-09-27 13:30:09 INFO     Number Plate Checking Started
+2022-09-27 13:30:09 INFO     Vehicle pass type checking started
+2022-09-27 13:30:09 INFO     Insertion in activity started
+2022-09-27 13:30:12 INFO     Unreadable socket <socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36335)> is removed
+2022-09-27 13:30:18 INFO     Data Recieved
+2022-09-27 13:30:18 INFO     Captured Data is Filtered
+2022-09-27 13:30:18 INFO     Number Plate is Corrected
+2022-09-27 13:30:18 INFO     Number Plate Checking Started
+2022-09-27 13:30:18 INFO     Vehicle pass type checking started
+2022-09-27 13:30:18 INFO     Insertion in activity started
+2022-09-27 13:30:21 INFO     Unreadable socket <socket.socket fd=1012, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36336)> is removed
+2022-09-27 13:30:28 INFO     Data Recieved
+2022-09-27 13:30:28 INFO     Captured Data is Filtered
+2022-09-27 13:30:28 INFO     Number Plate Checking Started
+2022-09-27 13:30:28 INFO     Vehicle pass type checking started
+2022-09-27 13:30:28 INFO     Insertion in activity started
+2022-09-27 13:30:31 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36337)> is removed
+2022-09-27 13:30:31 INFO     Data Recieved
+2022-09-27 13:30:31 INFO     Captured Data is Filtered
+2022-09-27 13:30:31 INFO     Number Plate is Corrected
+2022-09-27 13:30:31 INFO     Number Plate Checking Started
+2022-09-27 13:30:31 INFO     Vehicle pass type checking started
+2022-09-27 13:30:31 INFO     Insertion in activity started
+2022-09-27 13:30:34 INFO     Unreadable socket <socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36338)> is removed
+2022-09-27 13:30:40 INFO     Data Recieved
+2022-09-27 13:30:40 INFO     Captured Data is Filtered
+2022-09-27 13:30:40 INFO     Number Plate is Corrected
+2022-09-27 13:30:40 INFO     Number Plate Checking Started
+2022-09-27 13:30:40 INFO     Vehicle pass type checking started
+2022-09-27 13:30:40 INFO     Insertion in activity started
+2022-09-27 13:30:43 INFO     Unreadable socket <socket.socket fd=1020, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36339)> is removed
+2022-09-27 13:30:49 INFO     Data Recieved
+2022-09-27 13:30:49 INFO     Captured Data is Filtered
+2022-09-27 13:30:49 INFO     Number Plate is Corrected
+2022-09-27 13:30:49 INFO     Number Plate Checking Started
+2022-09-27 13:30:49 INFO     Vehicle pass type checking started
+2022-09-27 13:30:49 INFO     Insertion in activity started
+2022-09-27 13:30:52 INFO     Unreadable socket <socket.socket fd=1020, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36340)> is removed
+2022-09-27 13:30:52 INFO     Data Recieved
+2022-09-27 13:30:52 INFO     Captured Data is Filtered
+2022-09-27 13:30:52 INFO     Number Plate is Corrected
+2022-09-27 13:30:52 INFO     Number Plate Checking Started
+2022-09-27 13:30:52 INFO     Vehicle pass type checking started
+2022-09-27 13:30:52 INFO     Insertion in activity started
+2022-09-27 13:30:55 INFO     Unreadable socket <socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36341)> is removed
+2022-09-27 13:30:55 INFO     Data Recieved
+2022-09-27 13:30:55 INFO     Captured Data is Filtered
+2022-09-27 13:30:55 INFO     Number Plate is Corrected
+2022-09-27 13:30:55 INFO     Number Plate Checking Started
+2022-09-27 13:30:55 INFO     Vehicle pass type checking started
+2022-09-27 13:30:55 INFO     Insertion in activity started
+2022-09-27 13:30:58 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36342)> is removed
+2022-09-27 13:30:59 INFO     Data Recieved
+2022-09-27 13:30:59 INFO     Captured Data is Filtered
+2022-09-27 13:30:59 INFO     Number Plate is Corrected
+2022-09-27 13:30:59 INFO     Number Plate Checking Started
+2022-09-27 13:30:59 INFO     Vehicle pass type checking started
+2022-09-27 13:30:59 INFO     Insertion in activity started
+2022-09-27 13:31:02 INFO     Unreadable socket <socket.socket fd=1020, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36343)> is removed
+2022-09-27 13:31:02 INFO     Data Recieved
+2022-09-27 13:31:02 INFO     Captured Data is Filtered
+2022-09-27 13:31:02 INFO     Number Plate is Corrected
+2022-09-27 13:31:02 INFO     Number Plate Checking Started
+2022-09-27 13:31:02 INFO     Vehicle pass type checking started
+2022-09-27 13:31:02 INFO     Insertion in activity started
+2022-09-27 13:31:05 INFO     Unreadable socket <socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36344)> is removed
+2022-09-27 13:31:05 INFO     Data Recieved
+2022-09-27 13:31:05 INFO     Captured Data is Filtered
+2022-09-27 13:31:05 INFO     Number Plate Checking Started
+2022-09-27 13:31:05 INFO     Vehicle pass type checking started
+2022-09-27 13:31:05 INFO     Insertion in activity started
+2022-09-27 13:31:08 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36345)> is removed
+2022-09-27 13:31:08 INFO     Data Recieved
+2022-09-27 13:31:08 INFO     Captured Data is Filtered
+2022-09-27 13:31:08 INFO     Number Plate Checking Started
+2022-09-27 13:31:08 INFO     Vehicle pass type checking started
+2022-09-27 13:31:08 INFO     Insertion in activity started
+2022-09-27 13:31:11 INFO     Unreadable socket <socket.socket fd=1020, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36346)> is removed
+2022-09-27 13:31:11 INFO     Data Recieved
+2022-09-27 13:31:11 INFO     Captured Data is Filtered
+2022-09-27 13:31:11 INFO     Number Plate Checking Started
+2022-09-27 13:31:11 INFO     Vehicle pass type checking started
+2022-09-27 13:31:11 INFO     Insertion in activity started
+2022-09-27 13:31:14 INFO     Unreadable socket <socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36347)> is removed
+2022-09-27 13:31:14 INFO     Data Recieved
+2022-09-27 13:31:14 INFO     Captured Data is Filtered
+2022-09-27 13:31:14 INFO     Number Plate is Corrected
+2022-09-27 13:31:14 INFO     Number Plate Checking Started
+2022-09-27 13:31:14 INFO     Vehicle pass type checking started
+2022-09-27 13:31:14 INFO     Insertion in activity started
+2022-09-27 13:31:17 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36348)> is removed
+2022-09-27 13:31:17 INFO     Data Recieved
+2022-09-27 13:31:17 INFO     Captured Data is Filtered
+2022-09-27 13:31:17 INFO     Number Plate Checking Started
+2022-09-27 13:31:17 INFO     Vehicle pass type checking started
+2022-09-27 13:31:17 INFO     Insertion in activity started
+2022-09-27 13:31:20 INFO     Unreadable socket <socket.socket fd=1020, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36349)> is removed
+2022-09-27 13:31:24 INFO     Data Recieved
+2022-09-27 13:31:24 INFO     Captured Data is Filtered
+2022-09-27 13:31:24 INFO     Number Plate Checking Started
+2022-09-27 13:31:24 INFO     Vehicle pass type checking started
+2022-09-27 13:31:24 INFO     Insertion in activity started
+2022-09-27 13:31:27 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36350)> is removed
+2022-09-27 13:31:27 INFO     Data Recieved
+2022-09-27 13:31:27 INFO     Captured Data is Filtered
+2022-09-27 13:31:27 INFO     Number Plate is Corrected
+2022-09-27 13:31:27 INFO     Number Plate Checking Started
+2022-09-27 13:31:27 INFO     Vehicle pass type checking started
+2022-09-27 13:31:27 INFO     Insertion in activity started
+2022-09-27 13:31:30 INFO     Unreadable socket <socket.socket fd=1000, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36351)> is removed
+2022-09-27 13:31:57 INFO     Data Recieved
+2022-09-27 13:31:57 INFO     Captured Data is Filtered
+2022-09-27 13:31:57 INFO     Number Plate Checking Started
+2022-09-27 13:31:57 INFO     Vehicle pass type checking started
+2022-09-27 13:31:57 INFO     Insertion in activity started
+2022-09-27 13:32:01 INFO     Unreadable socket <socket.socket fd=1000, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36352)> is removed
+2022-09-27 13:32:01 INFO     Data Recieved
+2022-09-27 13:32:01 INFO     Captured Data is Filtered
+2022-09-27 13:32:01 INFO     Number Plate Checking Started
+2022-09-27 13:32:01 INFO     Vehicle pass type checking started
+2022-09-27 13:32:01 INFO     Insertion in activity started
+2022-09-27 13:32:04 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36353)> is removed
+2022-09-27 13:32:24 INFO     Data Recieved
+2022-09-27 13:32:24 INFO     Captured Data is Filtered
+2022-09-27 13:32:24 INFO     Number Plate Checking Started
+2022-09-27 13:32:24 INFO     Vehicle pass type checking started
+2022-09-27 13:32:24 INFO     Insertion in activity started
+2022-09-27 13:32:28 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36354)> is removed
+2022-09-27 13:32:45 INFO     Data Recieved
+2022-09-27 13:32:45 INFO     Captured Data is Filtered
+2022-09-27 13:32:45 INFO     Number Plate is Corrected
+2022-09-27 13:32:45 INFO     Number Plate Checking Started
+2022-09-27 13:32:45 INFO     Vehicle pass type checking started
+2022-09-27 13:32:45 INFO     Insertion in activity started
+2022-09-27 13:32:48 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36355)> is removed
+2022-09-27 13:32:51 INFO     Data Recieved
+2022-09-27 13:32:51 INFO     Captured Data is Filtered
+2022-09-27 13:32:51 INFO     Number Plate Checking Started
+2022-09-27 13:32:51 INFO     Vehicle pass type checking started
+2022-09-27 13:32:51 INFO     Insertion in activity started
+2022-09-27 13:32:54 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36356)> is removed
+2022-09-27 13:32:55 INFO     Data Recieved
+2022-09-27 13:32:55 INFO     Captured Data is Filtered
+2022-09-27 13:32:55 INFO     Number Plate is Corrected
+2022-09-27 13:32:55 INFO     Number Plate Checking Started
+2022-09-27 13:32:55 INFO     Vehicle pass type checking started
+2022-09-27 13:32:55 INFO     Insertion in activity started
+2022-09-27 13:32:58 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36357)> is removed
+2022-09-27 13:32:58 INFO     Data Recieved
+2022-09-27 13:32:58 INFO     Captured Data is Filtered
+2022-09-27 13:32:58 INFO     Number Plate is Corrected
+2022-09-27 13:32:58 INFO     Number Plate Checking Started
+2022-09-27 13:32:58 INFO     Vehicle pass type checking started
+2022-09-27 13:32:58 INFO     Insertion in activity started
+2022-09-27 13:33:01 INFO     Unreadable socket <socket.socket fd=1000, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36358)> is removed
+2022-09-27 13:33:01 INFO     Data Recieved
+2022-09-27 13:33:01 INFO     Captured Data is Filtered
+2022-09-27 13:33:01 INFO     Number Plate is Corrected
+2022-09-27 13:33:01 INFO     Number Plate Checking Started
+2022-09-27 13:33:01 INFO     Vehicle pass type checking started
+2022-09-27 13:33:01 INFO     Insertion in activity started
+2022-09-27 13:33:04 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36359)> is removed
+2022-09-27 13:33:27 INFO     Data Recieved
+2022-09-27 13:33:27 INFO     Captured Data is Filtered
+2022-09-27 13:33:27 INFO     Number Plate is Corrected
+2022-09-27 13:33:27 INFO     Number Plate Checking Started
+2022-09-27 13:33:27 INFO     Vehicle pass type checking started
+2022-09-27 13:33:27 INFO     Insertion in activity started
+2022-09-27 13:33:30 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36360)> is removed
+2022-09-27 13:33:40 INFO     Data Recieved
+2022-09-27 13:33:40 INFO     Captured Data is Filtered
+2022-09-27 13:33:40 INFO     Number Plate Checking Started
+2022-09-27 13:33:40 INFO     Vehicle pass type checking started
+2022-09-27 13:33:40 INFO     Insertion in activity started
+2022-09-27 13:33:43 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36361)> is removed
+2022-09-27 13:33:46 INFO     Data Recieved
+2022-09-27 13:33:46 INFO     Captured Data is Filtered
+2022-09-27 13:33:46 INFO     Number Plate is Corrected
+2022-09-27 13:33:46 INFO     Number Plate Checking Started
+2022-09-27 13:33:46 INFO     Vehicle pass type checking started
+2022-09-27 13:33:46 INFO     Insertion in activity started
+2022-09-27 13:33:49 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36362)> is removed
+2022-09-27 13:33:49 INFO     Data Recieved
+2022-09-27 13:33:49 INFO     Captured Data is Filtered
+2022-09-27 13:33:49 INFO     Number Plate is Corrected
+2022-09-27 13:33:49 INFO     Number Plate Checking Started
+2022-09-27 13:33:49 INFO     Vehicle pass type checking started
+2022-09-27 13:33:49 INFO     Insertion in activity started
+2022-09-27 13:33:52 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36363)> is removed
+2022-09-27 13:34:01 INFO     Data Recieved
+2022-09-27 13:34:01 INFO     Captured Data is Filtered
+2022-09-27 13:34:01 INFO     Number Plate is Corrected
+2022-09-27 13:34:01 INFO     Number Plate Checking Started
+2022-09-27 13:34:01 INFO     Vehicle pass type checking started
+2022-09-27 13:34:01 INFO     Insertion in activity started
+2022-09-27 13:34:04 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36364)> is removed
+2022-09-27 13:34:11 INFO     Data Recieved
+2022-09-27 13:34:11 INFO     Captured Data is Filtered
+2022-09-27 13:34:11 INFO     Number Plate is Corrected
+2022-09-27 13:34:11 INFO     Number Plate Checking Started
+2022-09-27 13:34:11 INFO     Vehicle pass type checking started
+2022-09-27 13:34:11 INFO     Insertion in activity started
+2022-09-27 13:34:14 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36365)> is removed
+2022-09-27 13:34:20 INFO     Data Recieved
+2022-09-27 13:34:20 INFO     Captured Data is Filtered
+2022-09-27 13:34:20 INFO     Number Plate is Corrected
+2022-09-27 13:34:20 INFO     Number Plate Checking Started
+2022-09-27 13:34:20 INFO     Vehicle pass type checking started
+2022-09-27 13:34:20 INFO     Insertion in activity started
+2022-09-27 13:34:23 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36366)> is removed
+2022-09-27 13:34:30 INFO     Data Recieved
+2022-09-27 13:34:30 INFO     Captured Data is Filtered
+2022-09-27 13:34:30 INFO     Number Plate Checking Started
+2022-09-27 13:34:30 INFO     Vehicle pass type checking started
+2022-09-27 13:34:30 INFO     Insertion in activity started
+2022-09-27 13:34:33 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36367)> is removed
+2022-09-27 13:34:36 INFO     Data Recieved
+2022-09-27 13:34:36 INFO     Captured Data is Filtered
+2022-09-27 13:34:36 INFO     Number Plate is Corrected
+2022-09-27 13:34:36 INFO     Number Plate Checking Started
+2022-09-27 13:34:36 INFO     Vehicle pass type checking started
+2022-09-27 13:34:37 INFO     Insertion in activity started
+2022-09-27 13:34:40 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36368)> is removed
+2022-09-27 13:34:43 INFO     Data Recieved
+2022-09-27 13:34:43 INFO     Captured Data is Filtered
+2022-09-27 13:34:43 INFO     Number Plate is Corrected
+2022-09-27 13:34:43 INFO     Number Plate Checking Started
+2022-09-27 13:34:43 INFO     Vehicle pass type checking started
+2022-09-27 13:34:43 INFO     Insertion in activity started
+2022-09-27 13:34:46 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36369)> is removed
+2022-09-27 13:34:55 INFO     Data Recieved
+2022-09-27 13:34:55 INFO     Captured Data is Filtered
+2022-09-27 13:34:55 INFO     Number Plate is Corrected
+2022-09-27 13:34:55 INFO     Number Plate Checking Started
+2022-09-27 13:34:55 INFO     Vehicle pass type checking started
+2022-09-27 13:34:55 INFO     Insertion in activity started
+2022-09-27 13:34:58 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36370)> is removed
+2022-09-27 13:34:58 INFO     Data Recieved
+2022-09-27 13:34:58 INFO     Captured Data is Filtered
+2022-09-27 13:34:58 INFO     Number Plate Checking Started
+2022-09-27 13:34:58 INFO     Vehicle pass type checking started
+2022-09-27 13:34:58 INFO     Insertion in activity started
+2022-09-27 13:35:01 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36371)> is removed
+2022-09-27 13:35:08 INFO     Data Recieved
+2022-09-27 13:35:08 INFO     Captured Data is Filtered
+2022-09-27 13:35:08 INFO     Number Plate is Corrected
+2022-09-27 13:35:08 INFO     Number Plate Checking Started
+2022-09-27 13:35:08 INFO     Vehicle pass type checking started
+2022-09-27 13:35:08 INFO     Insertion in activity started
+2022-09-27 13:35:11 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36372)> is removed
+2022-09-27 13:35:14 INFO     Data Recieved
+2022-09-27 13:35:14 INFO     Captured Data is Filtered
+2022-09-27 13:35:14 INFO     Number Plate Checking Started
+2022-09-27 13:35:14 INFO     Vehicle pass type checking started
+2022-09-27 13:35:14 INFO     Insertion in activity started
+2022-09-27 13:35:17 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36373)> is removed
+2022-09-27 13:35:26 INFO     Data Recieved
+2022-09-27 13:35:26 INFO     Captured Data is Filtered
+2022-09-27 13:35:26 INFO     Number Plate is Corrected
+2022-09-27 13:35:26 INFO     Number Plate Checking Started
+2022-09-27 13:35:26 INFO     Vehicle pass type checking started
+2022-09-27 13:35:26 INFO     Insertion in activity started
+2022-09-27 13:35:29 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36374)> is removed
+2022-09-27 13:35:32 INFO     Data Recieved
+2022-09-27 13:35:32 INFO     Captured Data is Filtered
+2022-09-27 13:35:32 INFO     Number Plate is Corrected
+2022-09-27 13:35:32 INFO     Number Plate Checking Started
+2022-09-27 13:35:32 INFO     Vehicle pass type checking started
+2022-09-27 13:35:32 INFO     Insertion in activity started
+2022-09-27 13:35:35 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36375)> is removed
+2022-09-27 13:35:38 INFO     Data Recieved
+2022-09-27 13:35:38 INFO     Captured Data is Filtered
+2022-09-27 13:35:38 INFO     Number Plate is Corrected
+2022-09-27 13:35:38 INFO     Number Plate Checking Started
+2022-09-27 13:35:38 INFO     Vehicle pass type checking started
+2022-09-27 13:35:38 INFO     Insertion in activity started
+2022-09-27 13:35:41 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36376)> is removed
+2022-09-27 13:36:41 INFO     Data Recieved
+2022-09-27 13:36:41 INFO     Captured Data is Filtered
+2022-09-27 13:36:41 INFO     Number Plate is Corrected
+2022-09-27 13:36:41 INFO     Number Plate Checking Started
+2022-09-27 13:36:41 INFO     Vehicle pass type checking started
+2022-09-27 13:36:41 INFO     Insertion in activity started
+2022-09-27 13:36:45 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36377)> is removed
+2022-09-27 13:37:15 INFO     Data Recieved
+2022-09-27 13:37:15 INFO     Captured Data is Filtered
+2022-09-27 13:37:15 INFO     Number Plate is Corrected
+2022-09-27 13:37:15 INFO     Number Plate Checking Started
+2022-09-27 13:37:15 INFO     Vehicle pass type checking started
+2022-09-27 13:37:15 INFO     Insertion in activity started
+2022-09-27 13:37:18 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36378)> is removed
+2022-09-27 13:37:24 INFO     Data Recieved
+2022-09-27 13:37:24 INFO     Captured Data is Filtered
+2022-09-27 13:37:24 INFO     Number Plate is Corrected
+2022-09-27 13:37:24 INFO     Number Plate Checking Started
+2022-09-27 13:37:24 INFO     Vehicle pass type checking started
+2022-09-27 13:37:24 INFO     Insertion in activity started
+2022-09-27 13:37:27 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36379)> is removed
+2022-09-27 13:37:47 INFO     Data Recieved
+2022-09-27 13:37:47 INFO     Captured Data is Filtered
+2022-09-27 13:37:47 INFO     Number Plate is Corrected
+2022-09-27 13:37:47 INFO     Number Plate Checking Started
+2022-09-27 13:37:47 INFO     Vehicle pass type checking started
+2022-09-27 13:37:47 INFO     Insertion in activity started
+2022-09-27 13:37:50 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36380)> is removed
+2022-09-27 13:38:17 INFO     Data Recieved
+2022-09-27 13:38:17 INFO     Captured Data is Filtered
+2022-09-27 13:38:17 INFO     Number Plate is Corrected
+2022-09-27 13:38:17 INFO     Number Plate Checking Started
+2022-09-27 13:38:17 INFO     Vehicle pass type checking started
+2022-09-27 13:38:17 INFO     Insertion in activity started
+2022-09-27 13:38:20 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36381)> is removed
+2022-09-27 13:38:28 INFO     Data Recieved
+2022-09-27 13:38:28 INFO     Captured Data is Filtered
+2022-09-27 13:38:28 INFO     Number Plate is Corrected
+2022-09-27 13:38:28 INFO     Number Plate Checking Started
+2022-09-27 13:38:28 INFO     Vehicle pass type checking started
+2022-09-27 13:38:28 INFO     Insertion in activity started
+2022-09-27 13:38:31 INFO     Unreadable socket <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36382)> is removed
+2022-09-27 13:38:43 INFO     Data Recieved
+2022-09-27 13:38:43 INFO     Captured Data is Filtered
+2022-09-27 13:38:43 INFO     Number Plate Checking Started
+2022-09-27 13:38:43 INFO     Vehicle pass type checking started
+2022-09-27 13:38:43 INFO     Insertion in activity started
+2022-09-27 13:38:46 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36383)> is removed
+2022-09-27 13:38:59 INFO     Data Recieved
+2022-09-27 13:38:59 INFO     Captured Data is Filtered
+2022-09-27 13:38:59 INFO     Number Plate is Corrected
+2022-09-27 13:38:59 INFO     Number Plate Checking Started
+2022-09-27 13:38:59 INFO     Vehicle pass type checking started
+2022-09-27 13:38:59 INFO     Insertion in activity started
+2022-09-27 13:39:02 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36384)> is removed
+2022-09-27 13:39:22 INFO     Data Recieved
+2022-09-27 13:39:22 INFO     Captured Data is Filtered
+2022-09-27 13:39:22 INFO     Number Plate Checking Started
+2022-09-27 13:39:22 INFO     Vehicle pass type checking started
+2022-09-27 13:39:22 INFO     Insertion in activity started
+2022-09-27 13:39:25 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36385)> is removed
+2022-09-27 13:39:31 INFO     Data Recieved
+2022-09-27 13:39:31 INFO     Captured Data is Filtered
+2022-09-27 13:39:31 INFO     Number Plate is Corrected
+2022-09-27 13:39:31 INFO     Number Plate Checking Started
+2022-09-27 13:39:31 INFO     Vehicle pass type checking started
+2022-09-27 13:39:31 INFO     Insertion in activity started
+2022-09-27 13:39:34 INFO     Unreadable socket <socket.socket fd=1016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36386)> is removed
+2022-09-27 13:39:34 INFO     Data Recieved
+2022-09-27 13:39:34 INFO     Captured Data is Filtered
+2022-09-27 13:39:34 INFO     Number Plate Checking Started
+2022-09-27 13:39:34 INFO     Vehicle pass type checking started
+2022-09-27 13:39:34 INFO     Insertion in activity started
+2022-09-27 13:39:37 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36387)> is removed
+2022-09-27 13:39:46 INFO     Data Recieved
+2022-09-27 13:39:46 INFO     Captured Data is Filtered
+2022-09-27 13:39:46 INFO     Number Plate is Corrected
+2022-09-27 13:39:46 INFO     Number Plate Checking Started
+2022-09-27 13:39:46 INFO     Vehicle pass type checking started
+2022-09-27 13:39:46 INFO     Insertion in activity started
+2022-09-27 13:39:49 INFO     Unreadable socket <socket.socket fd=1004, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.30.195', 8090), raddr=('192.168.30.200', 36388)> is removed
+2022-09-27 13:39:55 INFO     Data Recieved
+2022-09-27 13:39:55 INFO     Captured Data is Filtered
+2022-09-27 13:39:55 INFO     Number Plate is Corrected
+2022-09-27 13:39:55 INFO     Number Plate Checking Started
+2022-09-27 13:39:55 INFO     Vehicle pass type checking started
+2022-09-27 13:39:55 INFO     Insertion in activity started

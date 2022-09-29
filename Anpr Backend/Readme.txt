@@ -34,6 +34,12 @@ Program that call the API.py and execute to configure camera parameter.
 9)Python File name : check_status.py
 
 Program to check the status of Socket,Database and Redis server.
+
+10)File name : requirements.txt
+
+List of python packages to be installed
+(use command pip install -r requirements.txt)
+
 ---------------------------------------------------------------------------------------------------
 UPDATE ON CODE :
 

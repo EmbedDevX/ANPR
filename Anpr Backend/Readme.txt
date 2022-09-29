@@ -31,15 +31,16 @@ Program that call the API.py and execute to configure camera parameter.
 
 8)Anpr_Central : The cental log file
  
+9)Python File name : check_status.py
+
+Program to check the status of Socket,Database and Redis server.
 ---------------------------------------------------------------------------------------------------
 UPDATE ON CODE :
 
-Dt :26th sep
-1)All code are updated (ips and ports are reading from the configfile.ini file)
 
-Dt :27th sep
-1)Code added in class to check DATABASE,REDIS,SOCKET status
-2)A central log file is created in which all the functionality of the class objects will be stored with time stamp
+1)All code are updated (ips and ports are reading from the configfile.ini file)
+2)Code added in class to check DATABASE,REDIS,SOCKET status
+3)A central log file is created in which all the functionality of the class objects will be stored with time stamp
 
 
 ---------------------------------------------------------------------------------------------------

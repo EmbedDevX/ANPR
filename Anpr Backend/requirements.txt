@@ -1,0 +1,9 @@
+Requests
+xml-python
+redis
+configparser
+times
+sockets
+selection
+pymssql
+logging

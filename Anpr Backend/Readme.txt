@@ -1,7 +1,7 @@
 All the backend code it attahced here.
 --------------------------------------------------------------------------------------------------
 
-1) Python File name : Socket_listen.py
+1) Python File name : camera.py
 
 Class : Camera
 
@@ -9,9 +9,9 @@ Class : Camera
 
 class : Database
 
-3)Python File name : Rediss.py
+3)Python File name : rediss.py
 
-class : Send_data
+class : Rediss
 
 4)Python File name : log.py
  

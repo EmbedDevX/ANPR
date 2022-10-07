@@ -40,6 +40,14 @@ Program to check the status of Socket,Database and Redis server.
 List of python packages to be installed
 (use command pip install -r requirements.txt)
 
+11)File name : db_api.py (sample)
+
+(Python class to interact with db for api work)
+
+12)File name : app.py(sample)
+
+(Api python program for tab)
+
 ---------------------------------------------------------------------------------------------------
 UPDATE ON CODE :
 

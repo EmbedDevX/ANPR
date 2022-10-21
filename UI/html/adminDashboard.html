@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR | Dashboard</title>
+    <!-- common style sheet -->
+    <link rel="stylesheet" href="../style/commonStyle.css">
+    <!-- page style sheet -->
+    <link rel="stylesheet" href="../style/adminDashboardStyle.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- link for jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- link for box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="veil" id="veil"></div>
+    <section class="sidebar">
+        <!-- company logo -->
+        <img src="../images/soulLogo.png" alt="company logo" class="logo">
+        <!-- nav bar -->
+        <nav>
+            <ul>
+                <!-- Dashboard page link -->
+                <li><a href="./adminDashboard.html"><i class="bx bxs-dashboard"></i></a></li>
+                <!-- Activity page logo -->
+                <li><a href="./activity.html"><i class="bx bxs-analyse"></i></a></li>
+                <!-- Passes page logo -->
+                <li><a href="./passes.html"><i class="bx bx-id-card"></i></a></li>
+                <!-- Settings page logo -->
+                <li><a href="./settings.html"><i class="bx bx-user"></i></a></li>
+            </ul>
+        </nav>
+        <i class="bx bx-log-out logOutLogo" id="logOutBtn"></i>
+    </section>
+    <section class="mainBody">
+       <header>
+            <div class="pageName">Dashboard</div>
+            <div class="navOpts">
+                <button id="regVehicleFormBtn">Register vehicle</button>
+                <span>|</span>
+                <button id="schVisitFormBtn">Schedule visit</button>
+            </div>
+       </header>
+       <main>
+            <section class="summaryPanel">
+                <div class="summaryPanelName">Summary</div>
+                <section class="summaryPanelBody">
+                    <!-- card 1 -->
+                    <section class="summaryPanelCard">
+                        <i class="bx bxs-car summaryPanelCardLogo blueLogo"></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Entries Today</div>
+                            <div class="summaryPanelCardValue" id="entriesToday">115</div>
+                        </div>
+                    </section>
+                    <!-- card 2 -->
+                    <section class="summaryPanelCard">
+                        <i class="bx bxs-car summaryPanelCardLogo redLogo"></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Guest vehicles</div>
+                            <div class="summaryPanelCardValue" id="guestVehicles">115</div>
+                        </div>
+                    </section>
+                    <!-- card 3 -->
+                    <section class="summaryPanelCard">
+                        <i class="bx bxs-car summaryPanelCardLogo blueLogo"></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Staff / Organization vehicles</div>
+                            <div class="summaryPanelCardValue" id="staffOrgVehicles">115</div>
+                        </div>
+                    </section>
+                    <!-- card 4 -->
+                    <section class="summaryPanelCard">
+                        <i class="bx bxs-car summaryPanelCardLogo redLogo"></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Special purpose vehicles</div>
+                            <div class="summaryPanelCardValue" id="specialPurposeVehicles">115</div>
+                        </div>
+                    </section>
+                    <!-- card 5 -->
+                    <section class="summaryPanelCard">
+                        <i class="bx bxs-car summaryPanelCardLogo blueLogo"></i>
+                        <div class="summaryPanelCardData">
+                            <div class="summaryPanelCardName">Passes issued</div>
+                            <div class="summaryPanelCardValue" id="passesIssued">115</div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <!-- admin dashboard chart -->
+            <section class="entriesChart">
+                <canvas id="dashboardChart"></canvas>
+            </section>
+
+            <!-- latest entries table -->
+            <section class="latestEntriesTable" id="latestEntriesTable">
+                <section class="tableHeader">
+                    <div class="tableOpts">
+                        <div class="tableName">Latest entries</div>
+                        <button class="reset" id="reset"><i class="bx bx-revision"></i></button>
+                    </div>
+                    <div class="tableSearch">
+                        <input type="text" name="tableSearchField" id="tableSearchField" placeholder="Search...">
+                        <i class="bx bx-search-alt-2" id="tableSearchBtn"></i>
+                    </div>
+                </section>
+                <section class="tableBody" id="tableBody">
+                    <table>
+                        <thead>
+                             <tr>
+                                 <th>Serial</th>
+                                 <th>Plate number</th>
+                                 <th>Entry time</th>
+                                 <th>Entry date</th>
+                                 <th>Entry point</th>
+                                 <th>Exit time</th>
+                                 <th>Exit date</th>
+                                 <th>Exit point</th>
+                                 <th>Duration</th>
+                                 <th>Pass type</th>
+                                 <th>Pass status</th>
+                                 <th>Vehicle status</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>1001</td>
+                                 <td>TN37CF204</td>
+                                 <td>04:35 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>05:45 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>01 hr 10 min</td>
+                                 <td>One time</td>
+                                 <td>Expired</td>
+                                 <td>On-premise</td>
+                             </tr>
+                             <tr>
+                                 <td>1001</td>
+                                 <td>TN37CF204</td>
+                                 <td>04:35 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>05:45 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>01 hr 10 min</td>
+                                 <td>One time</td>
+                                 <td>Expired</td>
+                                 <td>On-premise</td>
+                             </tr>
+                             <tr>
+                                 <td>1001</td>
+                                 <td>TN37CF204</td>
+                                 <td>04:35 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>05:45 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>01 hr 10 min</td>
+                                 <td>One time</td>
+                                 <td>Expired</td>
+                                 <td>On-premise</td>
+                             </tr>
+                             <tr>
+                                 <td>1001</td>
+                                 <td>TN37CF204</td>
+                                 <td>04:35 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>05:45 PM</td>
+                                 <td>24-08-2022</td>
+                                 <td>Gate no. 6</td>
+                                 <td>01 hr 10 min</td>
+                                 <td>One time</td>
+                                 <td>Expired</td>
+                                 <td>On-premise</td>
+                             </tr>
+                             <tr>
+                                <td>1001</td>
+                                <td>TN37CF204</td>
+                                <td>04:35 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>05:45 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>01 hr 10 min</td>
+                                <td>One time</td>
+                                <td>Expired</td>
+                                <td>On-premise</td>
+                            </tr>
+                            <tr>
+                                <td>1001</td>
+                                <td>TN37CF204</td>
+                                <td>04:35 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>05:45 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>01 hr 10 min</td>
+                                <td>One time</td>
+                                <td>Expired</td>
+                                <td>On-premise</td>
+                            </tr>
+                            <tr>
+                                <td>1001</td>
+                                <td>TN37CF204</td>
+                                <td>04:35 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>05:45 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>01 hr 10 min</td>
+                                <td>One time</td>
+                                <td>Expired</td>
+                                <td>On-premise</td>
+                            </tr>
+                            <tr>
+                                <td>1001</td>
+                                <td>TN37CF204</td>
+                                <td>04:35 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>05:45 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>01 hr 10 min</td>
+                                <td>One time</td>
+                                <td>Expired</td>
+                                <td>On-premise</td>
+                            </tr>
+                            <tr>
+                                <td>1001</td>
+                                <td>TN37CF204</td>
+                                <td>04:35 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>05:45 PM</td>
+                                <td>24-08-2022</td>
+                                <td>Gate no. 6</td>
+                                <td>01 hr 10 min</td>
+                                <td>One time</td>
+                                <td>Expired</td>
+                                <td>On-premise</td>
+                            </tr>
+                         </tbody>
+                     </table> 
+                </section>
+            </section>
+       </main>
+    </section>
+
+    <!-- vehicle registration form -->
+    <section class="modalFormContainer" id="regVehicleForm">
+        <div class="modalFormHeader">
+            <div class="modalFormTitle">Register vehicle</div>
+            <i class='bx bx-x closeModal'></i>
+        </div>
+        <form class="passIssueForm">
+            <section class="modalPanel">
+                <!-- vehicle number -->
+                <div class="modalFieldContainer">
+                    <label for="employeeID">ID</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="employeeID" id="employeeID" placeholder="Enter employee ID">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+
+                <!-- visitor name -->
+                <div class="modalFieldContainer">
+                    <label for="employeeName">Name</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="employeeName" id="employeeName" placeholder="Enter employee name">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <div class="modalFieldContainer">
+                    <label for="employeeDept">Department</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="employeeDept" id="employeeDept" placeholder="Enter employee dept.">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- Date and Time -->
+                <!-- radio button set -->
+            </section>
+            <section class="modalPanel">
+                <div class="modalInputGroup">   
+                    <div class="modalFieldContainer">
+                        <label for="employeeName">Email</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="employeeEmail" id="employeeEmail" placeholder="Email">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                   
+                    <div class="modalFieldContainer">
+                        <label for="employeeContact">Contact no.</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="employeeContact" id="employeeContact" placeholder="Time">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                </div>
+                <!-- visitor contact -->
+                <div class="modalFieldContainer">
+                    <label for="employeeVehicleNumber">Vehicle number</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="employeeVehicleNumber" id="employeeVehicleNumber" placeholder="Enter vehicle number">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- visitor email -->
+
+                    <div class="modalRadioBtnGroup">
+                        <label for="#">Select vehicle type</label>
+                        <div class="modalRadioBtnSet">
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="employeeCar">
+                                <label for="employeeCar"><i class='bx bxs-car' ></i></label>
+                            </div>
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="employeeBike">
+                                <label for="employeeBike"><i class='bx bx-cycling' ></i></label>
+                            </div>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>              
+            </section>
+        </form>
+        <section class="modalFormActions">
+            <button type = 'reset' class="modalResetForm" id="regResetFormBtn">Reset form</button>
+            <button class="modalSubmitForm" id="regSubmitFormBtn">Submit form</button>
+        </section>
+    </section>  
+
+    <!-- Schedule a visit -->
+    <section class="modalFormContainer" id="scheduleVisitForm">
+        <div class="modalFormHeader">
+            <div class="modalFormTitle">Schedule a visit</div>
+            <i class='bx bx-x closeModal'></i>
+        </div>
+        <form class="passIssueForm">
+            <section class="modalPanel">
+                <!-- vehicle number -->
+                <div class="modalFieldContainer">
+                    <label for="visitorName">Visitor name</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="visitorName" id="visitorName" placeholder="Enter visitor name">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+
+                <!-- visitor name -->
+                <div class="modalFieldContainer">
+                    <label for="visitorContact">Visitor contact number</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="visitorContact" id="visitorContact" placeholder="Enter visitor contact">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <div class="modalFieldContainer">
+                    <label for="visitorEmail">Visitor email</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="visitorEmail" id="visitorEmail" placeholder="Enter visitor email">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- Date and Time -->
+                <!-- radio button set -->
+            </section>
+            <section class="modalPanel">
+                <!-- visitor contact -->
+                <div class="modalFieldContainer">
+                    <label for="visitorVehicleNumber">Vehicle number</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="visitorVehicleNumber" id="visitorVehicleNumber" placeholder="Vehicle number">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- visitor email -->
+                <div class="modalInputGroup">
+                    <div class="modalFieldContainer">
+                        <label for="visitDate">Date</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="date" id="visitDate" placeholder="Date">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                   
+                    <div class="modalFieldContainer">
+                        <label for="duration">No. of days</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="time" name="duration" id="duration" placeholder="0">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                </div>
+
+                <div class="modalInputCollection">
+                    <div class="modalFieldContainer">
+                        <label for="visitorPassType">Pass type</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="visitorPassType" id="visitorPassType" placeholder="Enter pass type">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                    <div class="modalRadioBtnGroup">
+                        <label for="#">Select vehicle type</label>
+                        <div class="modalRadioBtnSet">
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="visitorCar">
+                                <label for="visitorCar"><i class='bx bxs-car' ></i></label>
+                            </div>
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="visitorBike">
+                                <label for="visitorBike"><i class='bx bx-cycling' ></i></label>
+                            </div>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                </div>               
+            </section>
+        </form>
+        <section class="modalFormActions">
+            <button type="reset" class="modalResetForm" id="schResetFormBtn">Reset form</button>
+            <button class="modalSubmitForm" id="schSubmitFormBtn">Submit form</button>
+        </section>
+    </section>
+
+    <!-- form script -->
+    <script src="../script/form.js"></script>
+    <!-- structure script -->
+    <!-- <script src="structure.js"></script> -->
+    <!-- page script -->
+    <script src="../script/adminDashboardScript.js"></script>
+</body>
+</html>

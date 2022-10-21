@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR | Contact us</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/contactusStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> <!--icons link-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--jquery link--> 
+</head>
+<body>
+    <header>
+        <a href="./login.html" id="back" class="back">
+            <i class='bx bxs-arrow-from-right'></i>
+            <span>Home</span>
+        </a>
+    </header>
+    <main>
+        <div class="contactFormPanel">
+            <div class="contactHeader">Contact Us</div>
+            <form class="contactusForm">
+                <div class="fieldContainer">
+                    <label for="name">Name</label>
+                    <div class="inputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="name" id="visitorName" placeholder="Enter name">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="errorMsg">Error message</div>
+                </div>
+
+                <div class="fieldContainer">
+                    <label for="email">Email</label>
+                    <div class="inputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="email" name="email" id="visitorEmail" placeholder="Enter email">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="errorMsg">Error message</div>
+                </div>
+
+                <div class="fieldContainer">
+                    <label for="msg">Message</label>
+                    <div class="inputContainer">
+                        <i class="fieldLogo"></i>
+                        <textarea name="msg" id="visitorMsg" cols="30" rows="10" placeholder="Enter message"></textarea>
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="errorMsg">Error message</div>
+                </div>
+
+                <button id="contactUsBtn" class="contactusBtn">Submit</button>
+            </form>
+        </div>
+        <div class="contactPanel">
+            <section class="contactInfo">
+                <div class="phone">
+                    <i class='bx bxs-phone' ></i>
+                    <span>9786756453</span>
+                </div>
+                <div class="email">
+                    <i class='bx bx-envelope'></i>
+                    <span>soul@soulunileaders.com</span>
+                </div>
+                <div class="faq">
+                    <i class='bx bx-conversation' ></i>
+                    <span>FAQ</span>
+                </div>
+            </section>
+            <section class="sideInfo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti doloribus impedit, dolorum porro modi quisquam cum quos. Nihil, veritatis?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique reprehenderit eos distinctio deserunt esse aperiam vel libero officiis asperiores tenetur!
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="socialLinks">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div>
+    </footer>
+
+    <section class="msgBox" id="msgBox">
+        <i class="msgIcon" id="msgIcon"></i>
+        <div class="msg" id="msg"></div>
+    </section>
+    <script src="../script/contactUsScript.js"></script>
+</body>
+</html>

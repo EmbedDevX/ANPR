@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR | Login</title>    
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="../style/loginStyle.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- link for jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- link for box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="veil" id="veil"></div>
+    <header>
+        <!-- company logo -->
+        <img src="../images/soulLogo.png" alt="company logo" class="cLogo">
+
+        <!-- nav bar -->
+        <nav>
+            <ul>
+                <li><button class="navBtn" id="regVehicleFormBtn">Register vehicle</button></li>
+                <li>|</li>
+                <li><button class="navBtn" id="schVisitFormBtn">Schedule visit</button></li>
+                <li>|</li>
+                <li><button class="navBtn" id="contactUsBtn">Contact us</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- login form -->
+        <div class="loginFormContainer">
+            <div class="loginFormTitle">Login</div>
+            <form class="loginForm" id="loginForm">
+                <div class="fieldContainer">
+                    <label for="userCred">Email / ID</label>
+                    <div class="inputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="userCred" id="userCred" placeholder="Enter email or ID">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="errorMsg">Error message</div>
+                </div>
+                <div class="fieldContainer">
+                    <label for="userPass">Password</label>
+                    <div class="inputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="password" name="userPass" id="userPass" placeholder="Enter password">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="errorMsg">Error message</div>
+                </div>
+                <button class="loginBtn" id="loginBtn">Login</button>
+            </form>
+        </div>
+        <!-- Hero image -->
+        <img src="../images/heroImg.png" alt="hero image">
+    </main>
+    <footer>
+        <a href="./aboutUs.html">About us</a>
+        <div class="copyright">
+            <span>Copyright</span>
+            <i class="bx-bxs-copyright"></i>
+            <span class="copyrightYear">2022</span>
+        </div>
+        <a href="#">Privacy policy</a>
+    </footer>
+
+    <section class="msgBox" id="msgBox">
+        <i class="msgIcon" id="msgIcon"></i>
+        <div class="msg" id="msg"></div>
+    </section>
+    <!-- register vehicle form -->
+
+    <section class="modalFormContainer" id="regVehicleForm">
+        <div class="modalFormHeader">
+            <div class="modalFormTitle">Register vehicle</div>
+            <i class='bx bx-x closeModal'></i>
+        </div>
+        <form class="passIssueForm" id="passIssueForm">
+            <section class="modalPanel">
+                <!-- employee id -->
+                <div class="modalFieldContainer">
+                    <label for="employeeID">ID</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="employeeID" id="employeeID" placeholder="Enter employee ID">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+
+                <!-- employee name -->
+                <div class="modalFieldContainer">
+                    <label for="employeeName">Name</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="employeeName" id="employeeName" placeholder="Enter employee name">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <div class="modalFieldContainer">
+                    <label for="employeeDept">Department</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="employeeDept" id="employeeDept" placeholder="Enter employee dept.">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- Date and Time -->
+                <!-- radio button set -->
+            </section>
+            <section class="modalPanel">
+                <div class="modalInputGroup">   
+                    <div class="modalFieldContainer">
+                        <label for="employeeName">Email</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="employeeEmail" id="employeeEmail" placeholder="Email">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                   
+                    <div class="modalFieldContainer">
+                        <label for="employeeContact">Contact no.</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="employeeContact" id="employeeContact" placeholder="Time">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                </div>
+                <!-- visitor contact -->
+                <div class="modalFieldContainer">
+                    <label for="employeeVehicleNumber">Vehicle number</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="employeeVehicleNumber" id="employeeVehicleNumber" placeholder="Enter vehicle number">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- visitor email -->
+
+                    <div class="modalRadioBtnGroup">
+                        <label for="#">Select vehicle type</label>
+                        <div class="modalRadioBtnSet">
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="employeeCar">
+                                <label for="employeeCar"><i class='bx bxs-car' ></i></label>
+                            </div>
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="employeeBike">
+                                <label for="employeeBike"><i class='bx bx-cycling' ></i></label>
+                            </div>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>              
+            </section>
+        </form>
+        <section class="modalFormActions">
+            <button type = 'reset' class="modalResetForm" id="regResetFormBtn">Reset form</button>
+            <button class="modalSubmitForm" id="regSubmitFormBtn">Submit form</button>
+        </section>
+    </section>  
+
+    <!-- Schedule a visit -->
+    <section class="modalFormContainer" id="scheduleVisitForm">
+        <div class="modalFormHeader">
+            <div class="modalFormTitle">Schedule a visit</div>
+            <i class='bx bx-x closeModal'></i>
+        </div>
+        <form class="passIssueForm" id="passIssueForm">
+            <section class="modalPanel">
+                <!-- vehicle number -->
+                <div class="modalFieldContainer">
+                    <label for="visitorName">Visitor name</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="visitorName" id="visitorName" placeholder="Enter visitor name">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+
+                <!-- visitor name -->
+                <div class="modalFieldContainer">
+                    <label for="visitorContact">Visitor contact number</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="visitorContact" id="visitorContact" placeholder="Enter visitor contact">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <div class="modalFieldContainer">
+                    <label for="visitorEmail">Visitor email</label>
+                    <div class="modalInputContainer">
+                        <i class="modalFieldLogo"></i>
+                        <input type="text" name="visitorEmail" id="visitorEmail" placeholder="Enter visitor email">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- Date and Time -->
+                <!-- radio button set -->
+            </section>
+            <section class="modalPanel">
+                <!-- visitor contact -->
+                <div class="modalFieldContainer">
+                    <label for="visitorVehicleNumber">Vehicle number</label>
+                    <div class="modalInputContainer">
+                        <i class="fieldLogo"></i>
+                        <input type="text" name="visitorVehicleNumber" id="visitorVehicleNumber" placeholder="Vehicle number">
+                        <i class="clearField"></i>
+                    </div>
+                    <div class="modalErrorMsg">Error message</div>
+                </div>
+                <!-- visitor email -->
+                <div class="modalInputGroup">
+                    <div class="modalFieldContainer">
+                        <label for="visitDate">Date</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="date" id="visitDate" placeholder="Date">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                   
+                    <div class="modalFieldContainer">
+                        <label for="duration">No. of days</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="duration" id="duration" placeholder="0">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                </div>
+
+                <div class="modalInputCollection">
+                    <div class="modalFieldContainer">
+                        <label for="visitorPassType">Pass type</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="visitorPassType" id="visitorPassType" placeholder="Enter pass type">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                    <div class="modalRadioBtnGroup">
+                        <label for="#">Select vehicle type</label>
+                        <div class="modalRadioBtnSet">
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="visitorCar">
+                                <label for="visitorCar"><i class='bx bxs-car' ></i></label>
+                            </div>
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="visitorBike">
+                                <label for="visitorBike"><i class='bx bx-cycling' ></i></label>
+                            </div>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                </div>               
+            </section>
+        </form>
+        <section class="modalFormActions">
+            <button type="reset" class="modalResetForm" id="schResetFormBtn">Reset form</button>
+            <button class="modalSubmitForm" id="schSubmitFormBtn">Submit form</button>
+        </section>
+    </section>
+
+    <!-- form script -->
+    <script src="../script/form.js"></script>
+    <!-- page script -->
+    <script src="../script/loginScript.js"></script>
+</body>
+</html>
+
+
+<!-- landing page of the application -->

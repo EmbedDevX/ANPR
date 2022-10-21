@@ -1,0 +1,230 @@
+<!-- security guard dashbord  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ANPR | Dashboard</title>
+        <!-- common style sheet -->
+        <link rel="stylesheet" href="../style/commonStyle.css">
+        <!-- page style sheet -->
+        <link rel="stylesheet" href="../style/securityDashboardStyle.css">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <!-- link for jquery  -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- link for box icons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="veil" id="veil"></div>
+        <section class="sidebar">
+            <img src="../images/soulLogo.png" alt="company logo" class="logo">
+            <!-- Put appropriate nav bar under this -->
+            <nav>
+                <ul>
+                    <!-- Dashboard -->
+                    <li><a href="./attendantDashboard.html"><i class='bx bxs-dashboard'></i></a></li>
+                    <!-- Settings -->
+                    <li><a href="./settings.html"><i class='bx bx-user' ></i></a></li>
+                </ul>
+            </nav>
+            <i class="bx bx-log-out logOutLogo" id="logOutBtn"></i>
+        </section>
+        <section class="mainBody">
+            <header>
+                <div class="pageName">Dashboard</div>
+                <div class="securityNavOpts">
+                    <div class="dayTime">Wednesday, 12:44 PM</div>
+                    <button class="issuePassFormBtn" id="passFormBtn">Issue Pass</button>
+                </div>
+            </header>
+            <main>
+                <section class="vehicleDetailsPanel">
+                    <div class="panelHeader">Vehicle Details</div>
+                    
+                    <div class="vehicleStatusHolder">
+                        <div class="vehicleStatusColor" id="vehicleStatusColor"></div>
+                        <div class="vehicleStatus" id="vehicleStatus">Vehicle status : Stop</div>
+                    </div>
+
+                    <!-- field 1 -->
+                    <div class="details vehicleDetails">
+                        <div class="detailHeader">Plate number</div>
+                        <div class="detailValue" id="plateNumber">TN26CG204</div>
+                    </div>
+
+                    <!-- field 2 -->
+                    <div class="details vehicleDetails">
+                        <div class="detailHeader">Pass type</div>
+                        <div class="detailValue" id="passType">All-Time-Entry-Exit Pass</div>
+                    </div>
+
+                    <!-- field 3 -->
+                    <div class="details vehicleDetails">
+                        <div class="detailHeader">Gate no.</div>
+                        <div class="detailValue" id="gateNumber">Campus 6 gate</div>
+                    </div>
+                </section>
+
+                <section class="userDetailsPanel">
+                    <div class="panelHeader">User details</div>
+                    <!-- field 1 -->
+                    <div class="details userDetails">
+                        <div class="detailHeader">User name</div>
+                        <div class="detailValue" id="userName">Sayantan Ghosh</div>
+                    </div>
+
+                    <!-- field 2 -->
+                    <div class="details userDetails">
+                        <div class="detailHeader">User department</div>
+                        <div class="detailValue" id="userDept">Electronics</div>
+                    </div>
+
+                    <!-- field 3 -->
+                    <div class="details userDetails">
+                        <div class="detailHeader">User email</div>
+                        <div class="detailValue" id="userEmail">sayantan.ghosh@soulunileaders.com</div>
+                    </div>
+                    
+                    <!-- field 4 -->
+                    <div class="details userDetails">
+                        <div class="detailHeader">User contact</div>
+                        <div class="detailValue" id="userContact">5616516851651</div>
+                    </div>
+                    
+                    <!-- field 5 -->
+                    <div class="details userDetails">
+                        <div class="detailHeader">Last entry time-date</div>
+                        <div class="detailValue" id="userLastEntry">12:22PM - 22-09-2022</div>
+                    </div>
+
+                    <!-- field 6 -->
+                    <div class="details userDetails">
+                        <div class="detailHeader">Last entry point</div>
+                        <div class="detailValue" id="userLastEntryPoint">Campus 3 gate</div>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <!-- Issue-pass form -->
+        <section class="modalFormContainer passIssueFormContainer" id="passIssueFormContainer">
+            <div class="modalFormHeader">
+                <div class="modalFormTitle">Issue pass</div>
+                <i class='bx bx-x closeModal'></i>
+            </div>
+            <form class="passIssueForm" id="passIssueForm">
+                <section class="modalPanel">
+                    <!-- vehicle number -->
+                    <div class="modalFieldContainer">
+                        <label for="userCred">Vehicle no.</label>
+                        <div class="modalInputContainer">
+                            <i class="modalFieldLogo"></i>
+                            <input type="text" name="userCred" id="userCred" placeholder="Enter vehicle no.">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+    
+                    <!-- visitor name -->
+                    <div class="modalFieldContainer">
+                        <label for="userCred">Visitor name</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="userCred" id="userCred" placeholder="Enter visitor name">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+    
+                    <!-- Date and Time -->
+                    <div class="modalInputGroup">
+                        <!-- Date -->
+                        <div class="modalFieldContainer">
+                            <label for="userCred">Date</label>
+                            <div class="modalInputContainer">
+                                <i class="fieldLogo"></i>
+                                <input type="date" name="userCred" id="userCred" placeholder="Date">
+                                <i class="clearField"></i>
+                            </div>
+                            <div class="modalErrorMsg">Error message</div>
+                        </div>
+                        <!-- Time -->
+                        <div class="modalFieldContainer">
+                            <label for="userCred">Time</label>
+                            <div class="modalInputContainer">
+                                <i class="fieldLogo"></i>
+                                <input type="time" name="userCred" id="userCred" placeholder="Time">
+                                <i class="clearField"></i>
+                            </div>
+                            <div class="modalErrorMsg">Error message</div>
+                        </div>
+                    </div>
+    
+                    <!-- radio button set -->
+                    <div class="modalRadioBtnGroup">
+                        <label for="#">Select vehicle type</label>
+                        <div class="modalRadioBtnSet">
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="car">
+                                <label for="car"><i class='bx bxs-car' ></i></label>
+                            </div>
+                            <div class="modalRadioBtn">
+                                <input type="radio" name="vehicle" id="bike">
+                                <label for="bike"><i class='bx bx-cycling' ></i></label>
+                            </div>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                </section>
+                <section class="modalPanel">
+                    <!-- visitor contact -->
+                    <div class="modalFieldContainer">
+                        <label for="userCred">Visitor name</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="userCred" id="userCred" placeholder="Enter visitor contact">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                    <!-- visitor email -->
+                    <div class="modalFieldContainer">
+                        <label for="userCred">Visitor name</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="userCred" id="userCred" placeholder="Enter visitor email">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+                    <!-- type of pass -->
+                    <div class="modalFieldContainer">
+                        <label for="userCred">Pass type</label>
+                        <div class="modalInputContainer">
+                            <i class="fieldLogo"></i>
+                            <input type="text" name="userCred" id="userCred" placeholder="Enter pass type">
+                            <i class="clearField"></i>
+                        </div>
+                        <div class="modalErrorMsg">Error message</div>
+                    </div>
+    
+                    <section class="modalFormActions">
+                        <button class="modalResetForm">Reset form</button>
+                        <button class="modalSubmitForm">Submit form</button>
+                    </section>
+                </section>
+            </form>
+        </section> 
+
+        <!-- form script -->
+        <!-- <script src="form.js"></script> -->
+        <!-- structure script -->
+        <!-- <script src="structure.js"></script> -->
+        <!-- page script -->
+        <script src="../script/securityDashboardScript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+header{
+    width: 100%;
+    height: 10%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.cLogo{
+    height: 80%;
+}
+nav{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    font-size: 16px;
+}
+.navBtn{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.loginFormContainer{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.loginFormTitle{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.loginForm{
+    width: 65%;
+    height: 80%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fieldContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fieldContainer label{
+    font-size: 16px;
+    padding: 10px;
+}
+.errorMsg{
+    font-size: 12px;
+    padding: 10px;
+    visibility: hidden;
+}
+.inputContainer{
+    width: 100%;
+    position: relative;
+}
+.inputContainer i{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.inputContainer input{
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    border : 2px solid #DBE4EE;
+    outline: none;
+    background-color: #F6F9FD;
+}
+.loginBtn{
+    width: 35%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #efefef;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #0D84DA;
+}
+.heroImg{
+    width: 40%;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+.copyright{
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright span{
+    font-size: 16px;
+}
+.copyright i{
+    padding: 0px 5px;
+    font-size: 22px;
+}
+.msgBox{
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    top: 0%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    transform: translate(-50%, -110%);
+}
+
+/* vehicle registration form style */
+
+
+.veil{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.modalFormContainer{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+}
+.modalFormHeader, .passIssueForm{
+    width: 100%;
+}
+.modalFormHeader{
+    padding: 0px 20px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.modalFormTitle, .closeModal{
+    font-size: 20px;
+}
+.passIssueForm{
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalPanel{
+    width: 50%;
+    height: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.modalFieldContainer{
+    width: 100%;
+}
+.modalFieldContainer label{
+    font-size: 15px;
+}
+.modalFieldContainer .modalErrorMsg{
+    font-size: 12px;
+}
+.modalInputContainer{
+    width: 100%;
+    position: relative;
+}
+.modalInputContainer input{
+    width: 100%;
+    margin: 8px 0px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border : 1px solid rgba(174, 174, 174, 0.5);
+    background-color: #EBECF0;
+}
+.modalInputGroup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalInputGroup .modalFieldContainer{
+    height: 100%;
+    width: 45%;
+}
+.modalRadioBtnGroup{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.modalRadioBtnGroup label{
+    font-size: 16px;
+}
+.modalRadioBtnSet{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+.modalRadioBtn{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalRadioBtn label i{
+    font-size: 35px;
+}
+
+.modalRadioBtnGroup .modalErrorMsg{
+    font-size: 12px;
+}
+
+.modalErrorMsg{
+    visibility: hidden;
+}
+.modalFormActions{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modalFormActions button{
+    margin: 0px 10px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+.modalResetForm{
+    background-color: #1e1e1e;
+    border-radius: 5px;
+}
+.modalSubmitForm{
+    background-color: #0085FE;
+    border-radius: 5px;
+}
+.modalInputCollection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalInputCollection .modalFieldContainer{
+    width: 45%;
+}
+.modalInputCollection .modalRadioBtnGroup{
+    width: 45%;
+}
+.veil{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 0;
+}

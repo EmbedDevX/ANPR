@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F6FF;
+}
+.sidebar{
+    width: 75px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.logo{
+    width: 80%;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    padding: 12px;
+    border-radius: 15px;
+    color: aliceblue;
+    line-height : 20px;
+    background: linear-gradient(145deg, #7771ff, #645fdf);
+    box-shadow:  0px 0px 0px #6e69f6,
+             -0px -0px 0px #706bfa;
+}
+.logOutLogo{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+.mainBody{
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 0px 50px;
+    background-color: #F2F6FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+header{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: green; */
+}
+.pageName{
+    font-size: 35px;
+    font-weight: bold;
+}
+.navOpts{
+    width: 16%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navOpts button{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    letter-spacing: 0.5px;
+    background-color: transparent; 
+}
+main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* background-color: olivedrab; */
+}
+.userDetailsPanel{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: pink; */
+}
+.panelTitle{
+    font-size: 30px;
+}
+.userDetailsForm{
+    width: 72%;
+    height: 85%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: green; */
+}
+.fieldContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: orangered; */
+}
+.fieldContainer label{
+    font-size: 16px;
+    padding: 5px 10px 10px;
+}
+.errorMsg{
+    font-size: 12px;
+    padding-top: 5px;
+    visibility : hidden;
+}
+
+.inputContainer{
+    width: 100%;
+    position: relative;
+    /* background-color: goldenrod; */
+}
+.fieldLogo{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+}
+.editField{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%, -50%);
+}
+.inputContainer input{
+    width: 100%;
+    padding: 15px 35px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: 2px solid #DBE4EE;
+    outline: none;
+    background-color: #F6F9FD;
+    /* color: rgba(0, 0, 0, 0.52); */
+}
+.registeredVehiclesTableContainer{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: gold; */
+}
+.tableTitle{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+}
+thead tr{
+    background-color: transparent;
+}
+tbody tr{
+    background-color: #fff;
+}
+th, td{
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: lighter;
+}
+td{
+    text-align: center;
+    padding: 15px 0px;
+    border-top: 2px solid rgba(189, 189, 223, 0.4);
+    border-bottom: 2px solid rgba(189, 189, 223, 0.4);
+}
+
+/* vehicle registration form style */
+
+
+.veil{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.modalFormContainer{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+}
+.modalFormHeader, .passIssueForm{
+    width: 100%;
+}
+.modalFormHeader{
+    padding: 0px 20px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.modalFormTitle, .closeModal{
+    font-size: 20px;
+}
+.passIssueForm{
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalPanel{
+    width: 50%;
+    height: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.modalFieldContainer{
+    width: 100%;
+}
+.modalFieldContainer label{
+    font-size: 15px;
+}
+.modalFieldContainer .modalErrorMsg{
+    font-size: 12px;
+}
+.modalInputContainer{
+    width: 100%;
+    position: relative;
+}
+.modalInputContainer input{
+    width: 100%;
+    margin: 8px 0px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border : 1px solid rgba(174, 174, 174, 0.5);
+    background-color: #EBECF0;
+}
+.modalInputGroup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalInputGroup .modalFieldContainer{
+    height: 100%;
+    width: 45%;
+}
+.modalRadioBtnGroup{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.modalRadioBtnGroup label{
+    font-size: 16px;
+}
+.modalRadioBtnSet{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+.modalRadioBtn{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalRadioBtn label i{
+    font-size: 35px;
+}
+
+.modalRadioBtnGroup .modalErrorMsg{
+    font-size: 12px;
+}
+
+.modalErrorMsg{
+    visibility: hidden;
+}
+.modalFormActions{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modalFormActions button{
+    margin: 0px 10px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+.modalResetForm{
+    background-color: #1e1e1e;
+    border-radius: 5px;
+}
+.modalSubmitForm{
+    background-color: #0085FE;
+    border-radius: 5px;
+}
+.modalInputCollection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modalInputCollection .modalFieldContainer{
+    width: 45%;
+}
+.modalInputCollection .modalRadioBtnGroup{
+    width: 45%;
+}
